@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reserva de Hotel</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Reserva de Hotel</h1>
+        <form action="reservar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">apellido:</label>
+            <input type="text"  id=" apellido" name="apellido" required>
+            
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            
+            <label for="checkin">Fecha de Entrada:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Fecha de Salida:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <label for="cama">Tipo de Cama:</label>
+            <select id="cama" name="cama" required>
+            <option value="">Seleccione una opción</option>
+            <option value="individual">Cama Individual</option>
+            <option value="doble">Cama Doble</option>
+            <option value="matrimonial">Cama Matrimonial</option>
+            <option value="king">Cama King Size</option>
+            <option value="queen">Cama Queen Size</option>
+            </select>
+
+            <label for="habitacion">Tipo de Habitación:</label>
+            <select id="habitacion" name="habitacion" required>
+                <option value="1">basica</option>
+                <option value="2">premiun</option>
+                <option value="3">Suite</option>
+                <option value="4">presidencial</option>
+
+            </select>
+            
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </div>
+</body>
+</html>
